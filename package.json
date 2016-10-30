@@ -1,0 +1,27 @@
+{
+  "name": "practical-php-primer-course",
+  "version": "1.0.0",
+  "description": "A GDI Minneapolis course introducing the PHP web development language.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamouse/practical-php-primer-course.git"
+  },
+  "keywords": [
+    "PHP",
+    "introduction",
+    "MySQL",
+    "GDI",
+    "class",
+    "GDIMPLS"
+  ],
+  "author": "Tamara Temple <tamouse@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamouse/practical-php-primer-course/issues"
+  },
+  "homepage": "https://github.com/tamouse/practical-php-primer-course#readme"
+}
