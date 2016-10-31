@@ -18,32 +18,37 @@ gulp.task('build', function () {
   //return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'});
   return cp.execSync('bundle exec jekyll build', {stdio: 'inherit'})
 });
-gulp.task('build:stage', function () {
+gulp.task('serve', ['build'], function(){
+  sync.init({
+    server: './_site'
+  });
+  gulp.watch([
+      '*.html',
+      '_includes/**.*',
+      '_data/**.*',
+      '_layouts/**.*',
+      '_sass/**.*',
+      '_slides/**.*',
+      'css/**.*',
+      'js/**.*',
+      'images/**.*',
+      '_config.yml'
+    ],
+    ['build'])
+});
+
+gulp.task('stage:build', function () {
   //return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'});
   return cp.execSync('bundle exec jekyll build --config=_config.yml,_staging.yml', {stdio: 'inherit'})
 });
-gulp.task('push:stage', function () {
-  // return cp.execSync('' );
+gulp.task('stage:push', function () {
+  var cmd = 'cd ' + buildDir + ' && ' +
+      'git add -A &&' +
+      'git commit -m staged && ' +
+      'git push -f && ' +
+      'cd ..';
+  return cp.execSync(cmd, {stdio: 'inherit'} );
 });
-
-gulp.task('serve', ['build'], function(){
-    sync.init({
-        server: './_site'
-    });
-    gulp.watch([
-       '*.html',
-       '_includes/**.*',
-       '_data/**.*',
-       '_layouts/**/*',
-       '_sass/**.*',
-       '_slides/**/*',
-       'css/**/*',
-       'js/**/*',
-       'images/**/*',
-       '_config.yml'
-   ],
-   ['build'])
-});
-gulp.task('stage', ['build:stage', 'push:stage'], function () {
+gulp.task('stage', ['stage:build', 'stage:push'], function () {
   console.log('pushed to staging')
 });

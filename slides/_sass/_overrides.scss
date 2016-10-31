@@ -1,5 +1,42 @@
 .reveal {
+  h1, h2, h3, h4, h5, h6 { text-transform: inherit; } // i really don't like all uppercase shouty shouty
   .notes {display: none;}
-  .go-wide {width: 960px}
-  .nowrap { white-space: nowrap}
+  .go-wide {width: 960px; }
+  .nowrap { white-space: nowrap; }
+  .small { font-size: 0.7em;  }
+
+  img.title-logo {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .controls {
+    // just a skosh higher
+    bottom: 20px;
+  }
+  .slide-number {
+    // easier to find up in the top left
+    top: 15px;
+    right: inherit;
+    bottom: inherit;
+    left: 15px;
+    font-size: 15px;
+  }
+
+  .two-column {
+    width: 100%;
+    min-width: 960px;
+    .left-column, .right-column {
+      float: left;
+      width: 45%;
+      padding-right: 20px;
+      vertical-align: top;
+    }
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
 }
