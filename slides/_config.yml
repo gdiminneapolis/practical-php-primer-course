@@ -1,7 +1,7 @@
-title: Your Awesome Class
-author: Your Name
+title: A Practical PHP Primer
+author: Tamara Temple
 description: |
-  Your awesome class in all it's glory.
+  A gentle yet practical introduction to server-side development.
 keywords:
   - GDI
   - GDIMpls
@@ -17,6 +17,15 @@ contact:
   twitter: "gdimpls"
   github: "gdiminneapolis"
 
+tweet_banner:
+  - text: "@gdimpls"
+    href: "https://twitter.com/gdimpls"
+  - text: "@tamouse"
+    href: "https://twitter.com/tamouse"
+  - text: "#gdi"
+    href: "https://twitter.com/search?q=%23gdi"
+  - text: "#practicalPHPPrimer"
+    href: "https://twitter.com/search?f=tweets&q=%23practicalPHPprimer"
 
 # There are a handful of styles available with reveal. They can be found in the
 # reveal.js/css/themes folder, and include:
@@ -50,6 +59,7 @@ exclude:
   - README.md
   - setup.sh
   - WINDOWS-README.md
+  - JEKYLL-REVEAL-STARTER-KIT-README.md
 
 # Don't change these. Change values in _staging.yml and _publish.yml appropriately.
 reveal_path: "/reveal.js"
