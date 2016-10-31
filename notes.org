@@ -1,0 +1,145 @@
+#+TITLE: Notes for the development of an Intro to PHP class for GDI Minneapolis
+#+AUTHOR: Tamara Temple
+#+EMAIL: tamouse@gmail.com
+#+begin_comment
+# Last edit Time-stamp: <2016-10-19 12:07:48 tamara>
+#+end_comment
+
+* Ideas for teaching
+
+  - be problem-solution focused, not syntax-based
+  - use diagrams, not words
+  - start with a problem, have them work out a solution, then discuss
+    and provide references
+  - the slides are *not* the reference, they are only a guide
+  - provide details in printed material
+
+* Concerns
+
+  - as ever, Windows users are sort of out in the cold (despite WAMP)
+    - also lack of a common teaching / learning / developing environment
+    - not the same as how they'll be deploying their work! (On a
+      GNU/Linux server with Apache in all likelyhood)
+  - getting users up to working PHP code as fast as possible
+  - dealing with the installation and configuration of software
+  - too much emphasis on basic syntax, not enough on problem solving
+    and learning how to use PHP/MYSQL
+
+* Approach
+
+  - Start *everyone* on Cloud9 development platform in the sky
+    - requires a *very* good network connection in the facility for
+      everyone to be using it
+  - Easy to build up a LAMP environment -- it's a standard
+    configuration prebuilt in Cloud9
+
+
+* Pre-requisites
+
+  - know HTML and CSS (no JS needed for Intro)
+
+  - understand basic programming concepts such as variables, loops,
+    branching, arrays, strings, procedures and functions.
+
+  - a Cloud9 account set up and ready to go.
+
+    - an account requires a credit card number to sign up, but nothing
+      is charged as long as they remain on the free level of service.
+
+    - get signed up *before* class so we don't have to deal with that
+      in class. I'd really rather not have to deal with the lowest
+      common denominator on this. On the other hand, maybe if we step
+      through it in class all together, we all get done at the same
+      time?
+
+    - we will create a (public) php-apache module in class, but feel
+      free to create one beforehand if you'd like, and play around
+      with it.
+
+  - since we'll be using Cloud9's editor to be working in class, we
+    don't have to worry about different editor behaviours
+
+
+* Learning Cloud9's Environment
+
+  - C9 is pretty simple to use, and the PHP/Apache/MySQL set up is
+    pretty simple to use as most everything is already set up.
+
+  - MySQL is already installed in the environment
+
+  - PhpMyAdmin is available
+
+    #+BEGIN_SRC shell-script
+      tamouse:~/workspace $ phpmyadmin-ctl install
+      Starting installation
+      Starting MySQL
+       ,* Starting MySQL database server mysqld
+         ...done.
+      Configuring database
+      Starting apache
+       ,* Restarting web server apache2
+         ...done.
+
+      PHPMyAdmin Installation complete. You can log in at: https://intro-to-php-tamouse.c9users.io/phpmyadmin with the following username (and blank password):
+
+             Username: tamouse
+
+      tamouse:~/workspace $
+    #+END_SRC
+
+      There isn't a password associated with the account.
+
+
+
+* Outline
+
+** Introduction
+
+*** Static vs. Dynamic Sites
+
+*** Dynamic Data-driven Sites
+
+*** Terminology
+
+    - client
+    - server
+    - database
+
+
+*** Where does PHP fit?
+
+*** Where does MySQL fit?
+
+*** Where does HTML fit?
+
+** Problem: Contact Form
+
+*** First try: Email
+
+*** Second try: PHP mail
+
+*** Third try: MySQL database
+
+** Concepts: CRUD
+
+*** "Back office operations"
+
+    The database created by your application probably needs to be
+    administered by someone.
+
+    - overall state, statistics, health of system (dashboard)
+    - reading data (reports)
+    - cleaning up data (fixing/updating)
+    - deleting old records (purging)
+    - extending data types (developing new features)
+
+
+
+
+* Misc Notes
+
+** Sketch.IO sketchpad
+
+   - [[https://sketch.io/sketchpad/][Sketchpad 4.0 - Draw, Create, Share]]
+
+     use this to sketch out wireframes using wacom tablet
