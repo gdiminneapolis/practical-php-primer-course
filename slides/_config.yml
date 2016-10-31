@@ -60,6 +60,7 @@ exclude:
   - setup.sh
   - WINDOWS-README.md
   - JEKYLL-REVEAL-STARTER-KIT-README.md
+  - node_modules
 
 # Don't change these. Change values in _staging.yml and _publish.yml appropriately.
 reveal_path: "/reveal.js"
