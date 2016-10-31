@@ -1,0 +1,67 @@
+title: A Practical PHP Primer
+author: Tamara Temple
+description: |
+  A gentle yet practical introduction to server-side development.
+keywords:
+  - GDI
+  - GDIMpls
+  - Girl Develop It
+  - Class
+  - Awesome
+
+# This is general info for GDIMpls
+contact:
+  name: GDI Minneapolis
+  web: http://gdiminneapolis.com
+  email: "minneapolis@girldevelopit.com"
+  twitter: "gdimpls"
+  github: "gdiminneapolis"
+
+tweet_banner:
+  - text: "@gdimpls"
+    href: "https://twitter.com/gdimpls"
+  - text: "@tamouse"
+    href: "https://twitter.com/tamouse"
+  - text: "#gdi"
+    href: "https://twitter.com/search?q=%23gdi"
+  - text: "#practicalPHPPrimer"
+    href: "https://twitter.com/search?f=tweets&q=%23practicalPHPprimer"
+
+# There are a handful of styles available with reveal. They can be found in the
+# reveal.js/css/themes folder, and include:
+#
+# style: gdicool
+# style: gdidefault
+# style: gdilight
+# style: gdisunny
+# style: simple
+style: gdidefault
+
+# This is where your slides will be found, in the _slides/ folder.
+# Number them in sequence
+collections:
+  - slides
+
+# If you create other files or folders that you do NOT want as part of the slide presentation
+# include them in this list.
+exclude:
+  - bin
+  - CONTRIBUTOR_COVENANT.md
+  - DETAILS-README.md
+  - Description.md
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - Outline.md
+  - package.json
+  - Rakefile
+  - README.md
+  - setup.sh
+  - WINDOWS-README.md
+  - JEKYLL-REVEAL-STARTER-KIT-README.md
+
+# Don't change these. Change values in _staging.yml and _publish.yml appropriately.
+reveal_path: "/reveal.js"
+baseurl: ""
+url: ""
