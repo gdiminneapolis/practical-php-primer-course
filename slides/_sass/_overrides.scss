@@ -1,5 +1,9 @@
 .reveal {
   h1, h2, h3, h4, h5, h6 { text-transform: inherit; } // i really don't like all uppercase shouty shouty
+  .big { font-size: 1.55em; }
+  .large { font-size: 1.2em; }
+
+  .attop { margin-top: 0; }
   .notes {display: none;}
   .go-wide {width: 960px; }
   .nowrap { white-space: nowrap; }

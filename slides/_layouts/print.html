@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>{{ site.title }}</title>
+    <title>{{ site.title }} - Printed Notes</title>
 
     <meta name="description" content="{{site.description}}">
     <meta name="author" content="{{site.author.name}}">
@@ -14,8 +14,10 @@
 	<![endif]-->
     <style>
       body { width: 960px; margin: 20px auto; }
-      aside { font-style: italic; margin-left: 100px; color: gray; }
-      img.title-logo { width: 150px; }
+      img { width: 100%; max-width: 100%; border: 1px solid grey; padding: 5px; margin: 5px auto; }
+      img.title-logo { width: 150px; border: none; padding: 0; margin: 0;}
+      body > section { border-bottom: 5px solid black; padding: 10px 0; margin: 10px 0; }
+      .notes { border: .5px solid grey; padding: 10px; }
     </style>
   </head>
   <body>
