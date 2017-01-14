@@ -1,11 +1,10 @@
-#+TITLE: Notes for the development of an Intro to PHP class for GDI Minneapolis
-#+AUTHOR: Tamara Temple
-#+EMAIL: tamouse@gmail.com
 #+begin_comment
-# Last edit Time-stamp: <2016-10-19 12:07:48 tamara>
+# Last edit Time-stamp: <2017-01-13 22:10:29 tamara>
 #+end_comment
+#+STARTUP: showall
 
-* Ideas for teaching
+
+* Thoughts about teaching
 
   - be problem-solution focused, not syntax-based
   - use diagrams, not words
@@ -33,13 +32,14 @@
   - Easy to build up a LAMP environment -- it's a standard
     configuration prebuilt in Cloud9
 
-
 * Pre-requisites
 
-  - know HTML and CSS (no JS needed for Intro)
+  - know HTML, CSS and JS
 
   - understand basic programming concepts such as variables, loops,
     branching, arrays, strings, procedures and functions.
+
+    - This is not a basic fundamentals of programming course.
 
   - a Cloud9 account set up and ready to go.
 
@@ -58,7 +58,6 @@
 
   - since we'll be using Cloud9's editor to be working in class, we
     don't have to worry about different editor behaviours
-
 
 * Learning Cloud9's Environment
 
@@ -89,52 +88,22 @@
 
       There isn't a password associated with the account.
 
+* Alternative to using C9's postgres
+** ElephantSQL
+   :PROPERTIES:
+   :LINK:     https://www.elephantsql.com/
+   :END:
 
+   #+BEGIN_QUOTE
+   PostgreSQL as a Service
 
-* Outline
+   Don't worry about configuration, maintenance and backups. Let us do that for you!
 
-** Introduction
+   ElephantSQL offer databases ranging from shared servers for smaller
+   projects and proof of concepts, up to enterprise grade multi server
+   setups.
 
-*** Static vs. Dynamic Sites
-
-*** Dynamic Data-driven Sites
-
-*** Terminology
-
-    - client
-    - server
-    - database
-
-
-*** Where does PHP fit?
-
-*** Where does MySQL fit?
-
-*** Where does HTML fit?
-
-** Problem: Contact Form
-
-*** First try: Email
-
-*** Second try: PHP mail
-
-*** Third try: MySQL database
-
-** Concepts: CRUD
-
-*** "Back office operations"
-
-    The database created by your application probably needs to be
-    administered by someone.
-
-    - overall state, statistics, health of system (dashboard)
-    - reading data (reports)
-    - cleaning up data (fixing/updating)
-    - deleting old records (purging)
-    - extending data types (developing new features)
-
-
-
+   #+END_QUOTE
 
 * Misc Notes
 
