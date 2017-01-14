@@ -3,7 +3,7 @@
 * Course Title: A practical primer to php programming
 * Cost:
 * Duration: not sure, this could be a 4 hour or 6 hour or maybe even 2 day course, depending
-* Instructor:
+* Instructor: Tamara, for now
 
 ## What you'll learn
 
@@ -26,7 +26,7 @@ web application.
 
 ## Prerequisite Knowledge
 
-* HTML and CSS
+* HTML, CSS, JS
 * Programming fundamentals (variables, loops, arrays, logic)
 * Comfortable working in the command line, using Git *and* GitHub (or GitLab,
   BitBucket, etc.)
@@ -35,7 +35,8 @@ web application.
 
 ## What to Complete Before Class
 
-* Create an Account at Cloud9 (https://c9.io)
+* Create an Account at Cloud9 (https://c9.io) (Ideally we'll have
+  these created for the students off of one of our instructor accounts.)
 
 ## What to Bring to Class
 
